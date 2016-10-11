@@ -2,14 +2,14 @@
 	  $tr=Application_Form_FrmLanguages::getCurrentlanguage();
 	
 	  $home=$this->url(array('module'=>'home','controller'=>'index','action'=>'index'), null, true);
-	  $registrar=$this->url(array('module'=>'registrar','controller'=>'register','action'=>'index'), null, true);
+	  $sale=$this->url(array('module'=>'sale','controller'=>'index','action'=>'index'), null, true);
 	  $foundation=$this->url(array('module'=>'foundation','controller'=>'register','action'=>'index'), null, true);
-	  $gep=$this->url(array('module'=>'gep','controller'=>'studentstudy','action'=>'index'), null, true);
+	  $product=$this->url(array('module'=>'product','controller'=>'index','action'=>'index'), null, true);
 	  $accounting=$this->url(array('module'=>'accounting','controller'=>'fee','action'=>'index'), null, true);
 	 // $gep=$this->url(array('module'=>'gep','controller'=>'studentstudy','action'=>'index'), null, true);
 	  //$gep=$this->url(array('module'=>'gep','controller'=>'gep','action'=>'index'), null, true);
 	  $report=$this->url(array('module'=>'allreport','controller'=>'accounting','action'=>'index'), null, true);
-	  $global=$this->url(array('module'=>'global','controller'=>'group','action'=>'index'), null, true);
+	  $purchase=$this->url(array('module'=>'purchase','controller'=>'index','action'=>'index'), null, true);
 	  $kidergarten=$this->url(array('module'=>'kindergarten','controller'=>'kindergarten','action'=>'index'), null, true);
 	  $reference_path=$this->url(array('module'=>'analysis','controller'=>'query','action'=>'index'), null, true);
 	  $backup=$this->url(array('module'=>'backup','controller'=>'index','action'=>'index'), null, true);
@@ -27,38 +27,21 @@
 								<span>'.$tr->translate("HOME_PAGE").'</span>
 							</a>
 						</li>',	  
-	  'registrar'=>'<li class="link">
-						<a title="ការិ.ចុះឈ្មោះ" href="'.$registrar.'">
-							<span>'.$tr->translate("REGISTRATION").'</span>
+	  'sale'=>'<li class="link">
+						<a title="ការិ.ចុះឈ្មោះ" href="'.$sale.'">
+							<span>'.$tr->translate("SALES").'</span>
 						</a>
 				  </li>',
-	  'global'=>'<li class="link">
-	  		<a title="ព័ត៏មានផ្សេងៗ" href="'.$global.'">
-	  		<span>'.$tr->translate("OTHER_INFOMATION").'</span>
+	  'product'=>'<li class="link">
+	  		<a title="ព័ត៏មានផ្សេងៗ" href="'.$product.'">
+	  		<span>'.$tr->translate("PURODUCT").'</span>
 	  		</a>
 	  		</li>',
-	  'foundation'=>'<li class="link">
-	  		<a title="ការិយាល័យរដ្ឋបាល" href="'.$foundation.'">
-	  		<span>'.$tr->translate("ADMINISTRATION").'</span>
+	  'purchase'=>'<li class="link">
+	  		<a title="ការិយាល័យរដ្ឋបាល" href="'.$purchase.'">
+	  		<span>'.$tr->translate("PURCHASE").'</span>
 	  		</a>
 	  		</li>',
-	 /* 'kindergarten'=>'<li class="link">
-	  		<a href="'.$kidergarten.'">
-	  			<span>'.$tr->translate("Kindergarten").'</span>
-	  		</a>
-	  	</li>',
-	 	'gep'=>'<li class="link">
-							<a title="ការិយាល័យរដ្ឋបាល" href="'.$gep.'">
-								<span>'.$tr->translate("GEP").'</span>
-							</a>
-						</li>',
-	  
-	  */
-	  	'accounting'=>'<li class="link">
-						<a title="ការិយាល័យគណនេយ្យ" href="'.$accounting.'">
-							<span>'.$tr->translate("ACCOUNTING").'</span>
-						</a>
-					</li>',
 	     
 	    'allreport'=>'<li class="link">
 						<a title="របាយការណ៏" href="'.$report.'">
@@ -71,12 +54,6 @@
 				  		<span>'.$tr->translate("ACL").'</span>
 				  		</a>
 				  		</li>',
-						
-	  	'setting'=>'<li class="link">
-	  	<a title="ការកំណត់ផ្សេងៗ" href="'.$setting.'">
-	  	<span>'.$tr->translate("SRMS_SETTING").'</span>
-	  	</a>
-	  	</li>',
 	 
 	  );
 ?>  
